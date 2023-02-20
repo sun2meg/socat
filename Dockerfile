@@ -1,7 +1,3 @@
-FROM alpine:edge
-
-ARG VERSION=1.7.4.3-r0
-
-RUN apk --no-cache add socat=${VERSION}
-
-ENTRYPOINT ["socat"]
+FROM alpine:3.13.5
+CMD node 'testing jenkins'
+#test1
